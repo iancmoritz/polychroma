@@ -78,6 +78,12 @@ class Settings(BaseSettings):
     chroma_server_grpc_port: Optional[str] = None
     chroma_server_cors_allow_origins: List[str] = []  # eg ["http://localhost:3000"]
 
+    postgres_username: Optional[str] = None
+    postgres_password: Optional[str] = None
+    postgres_hostname: Optional[str] = None
+    postgres_port: Optional[str] = None
+    postgres_databasename: Optional[str] = None
+
     anonymized_telemetry: bool = True
 
     allow_reset: bool = False
